@@ -8,15 +8,13 @@ let myTodo = {title: "Trash", text: "Take out the trash"};
 showTodo(myTodo);
 */
 
-// interface: syntactical contract that an entity should conform to,
-// defines the syntax that an entity must adhere to - properties, methods, and events
-
-interface Todo{
+// defines syntactical contract that an entity must adhere to - properties, methods, and events
+interface Todo {
   title: string;
   text: string;
 }
 
-function showTodo(todo: Todo) {
+function showTodo(todo: Todo) {  // basically, creates own custom type "Todo"
   console.log(todo.title + ": " + todo.text);
 }
 
